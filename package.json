@@ -12,6 +12,7 @@
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "react": "^16.8.6",
+    "react-dom": "^17.0.2",
     "react-scripts": "^3.4.0",
     "webdriver-manager": "^12.1.7"
   },
