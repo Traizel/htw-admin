@@ -1,0 +1,45 @@
+{
+  "name": "htw-admin-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://admin.heattransferwarehouse.com/",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "@material-ui/core": "^4.11.1",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "axios": "^0.21.1",
+    "body-parser": "^1.18.3",
+    "box-node-sdk": "^1.29.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.8.6",
+    "react-iframe": "^1.8.0",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.4.0",
+    "webdriver-manager": "^12.1.7"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "react-scripts start",
+    "server": "nodemon --watch server server/server.js",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "heroku-run-build-script": true
+}
