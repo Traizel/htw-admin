@@ -1,18 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaunchIcon from '@material-ui/icons/Launch';
 import './App.css';
-const {
-    main
-} = require('../server/index');
 
 function App () {
-
-    const [interval, setInterval] = useState(3);
-
-    const BPOrderCapture = () => {
-        main(interval)
-    }
 
     return (
         <>
@@ -49,14 +40,6 @@ function App () {
                 </ul>
             </div>
         </section>
-        {//<div>
-         //   <h3>Interval (Minutes)</h3>
-         //   <input type="number" value={interval} onChange={(e) => (setInterval(e.target.value))}/>
-         //   <br/>
-         //   <br/>
-         //   <button onClick={(e) => (BPOrderCapture())}>Manual Order Capture (BrightPearl)</button>
-         // </div>
-        }
         </>
     )
 }
